@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("assets/images/bg.jpeg");
+}
+
+.main .box {
+    position: absolute;
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.8;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+    padding: 50px 20px;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 60px;
+    max-width: 80vw;
+    position: relative;
+    z-index: 1;
+}
+
+nav #navBtn {
+    height: 30px;
+    width: 70px;
+    background-color: red;
+    color: white;
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav #navBtn:hover {
+    background-color: rgb(172, 21, 21)
+}
+
+nav img {
+    height: 90px;
+    width: 150px;
+}
+
+.hero {
+    margin-left: 5%;
+    position: relative;
+    z-index: 1;
+    font-family: Bebas Neue;
+    font-weight: 500;
+    top: 20%;
+    left: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 50%;
+    color: white;
+    line-height: 60px;
+    align-self: center;
+}
+
+.hero-buttons {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    padding-right: 100px;
+    padding-left: 100px;
+    justify-content: space-between;
+}
+
+.hero-buttons input {
+    font-size: larger;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    background-color: rgb(8, 1, 1);
+    width: 60%;
+    height: 50px;
+}
+
+/*Placeholders Color*/
+.hero-buttons input::placeholder {
+    padding-left: 15px;
+    color: rgb(255, 255, 255);
+    /* your desired color */
+    opacity: 1;
+    /* ensures color appears fully */
+}
+
+.hero-buttons button {
+    cursor: pointer;
+    font-size: 90%;
+    color: white;
+    background-color: red;
+    margin-left: 15px;
+    border: 1px solid white;
+    border-radius: 2px;
+    width: 40%;
+    height: 50px;
+}
+
+#text-big {
+    font-size: 80px;
+}
+
+#text-big2 {
+    font-size: 20px;
+}
+
+#text-big3 {
+    line-height: 50px;
+    font-size: 15px;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 125vh;
+    background-color: black;
+}
+
+section {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 70rem;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.img-scroll {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    row-gap: 10px;
+    width: 100%;
+    max-width: 1500px;
+    height: 70%;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+}
+
+.img-scroll #btn2 {
+    position: absolute;
+    top: 30%;
+    left: 98%;
+    cursor: pointer;
+    height: 110px;
+    width: 30px;
+    border: none;
+    font-size: 45px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.img-scroll #btn2:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.img-scroll #btn1 {
+    position: absolute;
+    top: 30%;
+    right: 98%;
+    cursor: pointer;
+    height: 110px;
+    width: 30px;
+    border: none;
+    font-size: 45px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.img-scroll #btn1:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.banner {
+    position: relative;
+    padding: 0.5rem;
+    margin: 1em;
+    width: 22%;
+    height: 90%;
+    border-radius: 15px;
+    background-color: black;
+    transition: .4s ease;
+}
+
+.banner img {
+    cursor: pointer;
+    border-radius: 15px;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.banner:hover {
+    transform: scale(1.1);
+}
+
+.banner span {
+    position: absolute;
+    top: 40%;
+    right: 81%;
+    font-size: 190px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 3px rgb(255, 255, 255);
+}
+
+.services {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.services h2 {
+    padding-left: 2rem;
+}
+
+.service-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: .1rem;
+    width: 100%;
+    height: 80%;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.wrap h3 {
+    font-size: 1.5em;
+}
+
+.wrap p {
+    margin-top: 1rem;
+    font-size: 1.1em;
+}
+
+.wrap img {
+    align-self: flex-end;
+    margin-top: 4rem;
+    height: 3rem;
+    width: 4rem;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .6rem;
+    flex-direction: column;
+    background-color: cadetblue;
+    cursor: pointer;
+    height: 90%;
+    width: 20%;
+    border-radius: 20px;
+    transition: 1s ease;
+}
+.faq{
+    display: inline-block;
+    margin-left: 9.5rem;
+    margin-bottom: .5em;
+    width: 100%;
+    color: white;
+    background-color: black;
+    justify-content: start;
+}
+.accordian{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    padding: 24px;
+    background-color: grey;
+    width: 80%;
+    height: 20%;
+    border-bottom: 1px solid black;
+    transition: .75s ease;
+}
+.question #btn{
+    font-size: 50px;
+}
+.question:hover{
+    background-color: rgba(200, 200, 200, 0.4);
+}
+.answer{
+    color: white;
+    padding: 24px;
+    background-color: grey;
+    width: 80%;
+    height: 75%;
+    font-size: 30px;
+}
+.wraper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.passive{
+    display:none;
+    /*else accordian
+    
+    width: 100vw;
+    height: 40vh;
+    
+    */
+}
+.bottom-search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    width: 100vw;
+    background-color: white;
+}
+.bottom-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+}
+.bottom-wrapper p{
+    color: white;
+    font-size: larger;
+}
+#items{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 50px;
+    margin-top: .5rem;
+    height: 20vh;
+    gap: 5px;
+}
+#us{
+    margin: 0;
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+input::placeholder{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+}
+#us1{
+    margin:0;
+    width: 20%;
+    height: 50%;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    font-size: 1.5em;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+#us1:hover{
+    background-color: rgb(190, 0, 0);
+}
+.last-footer{
+    margin: auto;
+    width: 80vw;
+    height: 80vh;
+}
+#footer-items{
+    display: flex;
+    align-items: end;
+    width: 100%;
+    height: 10%;
+    color: rgb(203, 203, 203);
+}
+#foot-items{
+    height: 35%;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+}
+#foot-items ul{
+    margin-right: 6rem;
+}
+#lang-btn{
+    width: 9%;
+    height: 55%;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: large;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+ul li{
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+ul li a{
+    font-size: large;
+    color: rgb(203, 203, 203);
+}
+#first-anchor {
+    font-size: 20px;
+    color: rgb(203, 203, 203);
+}
+#last-p{
+    font-size: 15px;
+    color: rgb(203, 203, 203);
+}
