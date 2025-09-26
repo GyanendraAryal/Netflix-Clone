@@ -312,13 +312,16 @@ section {
     border-bottom: 1px solid black;
     transition: .75s ease;
 }
-.question #btn{
+.question .btn{
     font-size: 50px;
 }
 .question:hover{
     background-color: rgba(200, 200, 200, 0.4);
 }
 .answer{
+    /*just now*/
+    display: none;
+    transition: all 0.3s ease;
     color: white;
     padding: 24px;
     background-color: grey;
@@ -326,10 +329,16 @@ section {
     height: 75%;
     font-size: 30px;
 }
+.answer.active {
+  display: block;
+}
 .wraper{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+}
+.wrap{
+    margin: auto;
 }
 .passive{
     display:none;
@@ -414,7 +423,8 @@ input::placeholder{
     align-items: center;
 }
 #foot-items ul{
-    margin-right: 6rem;
+    margin-top: 1rem;
+    margin-right: 8rem;
 }
 #lang-btn{
     width: 9%;
@@ -439,5 +449,5 @@ ul li a{
 }
 #last-p{
     font-size: 15px;
-    color: rgb(203, 203, 203);
+    color: rgb(203, 203, 203)   ;
 }
