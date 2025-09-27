@@ -314,23 +314,25 @@ section {
 }
 .question .btn{
     font-size: 50px;
+    transition: transform 1s ease;
 }
 .question:hover{
     background-color: rgba(200, 200, 200, 0.4);
 }
 .answer{
     /*just now*/
-    display: none;
-    transition: all 0.3s ease;
+    display: block;
+    /*transition: all 0.3s ease;*/
     color: white;
     padding: 24px;
     background-color: grey;
     width: 80%;
     height: 75%;
     font-size: 30px;
+    transition: 1s ease;
 }
 .answer.active {
-  display: block;
+  display: none;
 }
 .wraper{
     display: flex;
@@ -339,15 +341,6 @@ section {
 }
 .wrap{
     margin: auto;
-}
-.passive{
-    display:none;
-    /*else accordian
-    
-    width: 100vw;
-    height: 40vh;
-    
-    */
 }
 .bottom-search{
     display: flex;
