@@ -1,2 +1,2 @@
-# Projects-HTML-CSS-and-JavaScript-
+# Netflix-Clone
 don't die of cringee
