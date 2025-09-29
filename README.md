@@ -1,2 +1,2 @@
-# Projects-HTML-CSS-and-JavaScript-
+# Projects-HTML-CSS-and-JavaScript
 don't die of cringee
