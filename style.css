@@ -480,7 +480,7 @@ ul li a {
 /*Login page*/
 .bg-box {
     position: relative;
-    height: 110vh;
+    height: 120vh;
     width: 100vw;
     background-image: url('assets/images/bg.jpeg');
 }
@@ -524,12 +524,12 @@ header .nav img {
     display: flex;
     flex-direction: column;
     width: 30%;
-    height: 100%;
+    height: 85%;
     align-items: center;
     margin: 10px auto;
     border-radius: 5px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .upper-div {
@@ -557,7 +557,13 @@ header .nav img {
     border-radius: 5px;
     font-size: larger;
     color: white;
+    cursor: pointer;
+    transition: 1.5 ease;
     background-color: rgba(77, 77, 77, 0.6);
+}
+.upper-div #btn1:hover{
+    
+    background-color: rgba(61, 61, 61, 0.6);
 }
 .upper-div #btn:hover{
     background-color: rgb(191, 2, 2);
@@ -587,8 +593,82 @@ header .nav img {
     font-size: large;
     color: white;
 }
-/*
-
 .lower-div {
+    margin: 0 auto;
+    width: 80%;
     display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.lower-div label{
+    font-size: larger;
+}
+.lower-div #chkbox{
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    accent-color: rgb(255, 255, 255);
+    border: 1px solid white;
+    cursor: pointer;
+    color: black;
+}
+.lower-div span{
+    margin: 4px;
+}
+.lower-div span a{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    font-weight: 700;
+}
+.last-div{
+    margin:8px auto;
+    width: 80%;
+    display: flex;
+    color: rgb(108, 106, 106);
+    flex-direction: column;
+    gap: 8px;
+}
+.last-div a{
+    color:blue;
+    opacity: .7;
+}
+.page-footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+    width: 100vw;
+    border-top: 1px solid gray;
+    background-color: rgb(29, 29, 29);
+}
+.sub-page-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+    width: 80%;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.list ul{
+    margin-right: 70px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    list-style-type: none;
+}
+.first-box p{
+    display: inline-block;
+    font-size: larger;
+    color: white;
+}
+.first-box a{
+    text-decoration: none;
+    color: white;
 }
