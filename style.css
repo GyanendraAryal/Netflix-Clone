@@ -569,10 +569,13 @@ header .nav img {
     background-color: rgb(191, 2, 2);
 }
 .upper-div input{
+    display: flex;
+    flex-direction: column;
     border: 1px solid rgba(222, 222, 222, 0.6);
     border-radius: 5px;
     background-color: rgba(46, 46, 46, 0.4);
     color: white;
+    padding-left: 20px;
 }
 .upper-div input::placeholder{
     color: white;

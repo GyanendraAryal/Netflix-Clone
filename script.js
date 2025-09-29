@@ -1,16 +1,3 @@
-/*const accordians=document.querySelectorAll(".accordian");
-accordians.forEach((acco)=>{
-    let ans=accordian.querySelector(".answer");
-    acco.addEventListener("click",()=>{
-        accordians.forEach((items)=>{
-            if(items!==accordian){
-                items.querySelector(".answer").classList.remove(".active");
-            }
-        });
-        answer.classList.toggle(".active")
-    })
-})*/
-
 const accordions = document.querySelectorAll(".accordian");
 
 accordions.forEach((accordion) => {
