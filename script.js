@@ -25,3 +25,18 @@ accordions.forEach((accordion) => {
     }
   });
 });
+/*From Validation*/
+let form=document.querySelector("#signin-form");
+form.addEventListener("submit",(e)=>{
+  e.defaultPrevented();//stop from submitting
+  
+let mail=document.querySelector("#mail").value.trim();//reduces spaces
+let pass=document.querySelector("#pass").value.trim();
+
+let emailPattern= /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if(mail===""||pass===""){
+  mail.style.border="2px solid red"
+  pass.style.border="2px solid red"
+}
+})

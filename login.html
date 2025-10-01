@@ -18,26 +18,28 @@
             </header>
 
             <div class="signin-box">
-                <div class="upper-div">
-                    <h2>Sign In</h2>
-                    <input type="email" class="itm center" id="mail" placeholder="Email or mobile number">
-                    <input type="password" class="itm center" id="pass" placeholder="Password">
-                    <button class="itm center" id="btn">Sign In</button>
-                    <p class="center">OR</p>
-                    <button class="itm center" id="btn1">Use a Sign-In Code</button>
-                    <p class="center"><a id="last-a" href="">Forgot password?</a></p>
-                </div>
-                <div class="lower-div">
-                    <label>
-                        <input type="checkbox" name="remember" id="chkbox" value="true">
-                        Remember me
-                    </label>
-                    <span>New to Netflix?<a href="">Sign up now.</a></span>
-                </div>
-                <div class="last-div">
-                    <p>This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
-                    <p><a href="">Learn more</a></p>
-                </div>
+                <form id="signin-form">
+                    <div class="upper-div">
+                        <h2>Sign In</h2>
+                        <input type="email" class="itm center wrongmail" id="mail" placeholder="Email or mobile number">
+                        <input type="password" class="itm center wrongpass" id="pass" placeholder="Password">
+                        <button type="submit" class="itm center" id="btn">Sign In</button>
+                        <p class="center">OR</p>
+                        <button class="itm center" id="btn1">Use a Sign-In Code</button>
+                        <p class="center"><a id="last-a" href="">Forgot password?</a></p>
+                    </div>
+                    <div class="lower-div">
+                        <label>
+                            <input type="checkbox" name="remember" id="chkbox" value="true">
+                            Remember me
+                        </label>
+                        <span>New to Netflix?<a href="">Sign up now.</a></span>
+                    </div>
+                    <div class="last-div">
+                        <p>This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+                        <p><a href="">Learn more</a></p>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
