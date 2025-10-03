@@ -335,14 +335,13 @@ section {
 .answer {
     /*just now*/
     display: none;
-    /*transition: all 0.3s ease;*/
+    transition: all 1.5s ease;
     color: white;
     padding: 24px;
     background-color: grey;
     width: 80%;
     height: 75%;
     font-size: 30px;
-    transition: 1s ease;
 }
 
 .answer.active {
@@ -352,6 +351,7 @@ section {
 .wraper {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     row-gap: 10px;
 }
 
@@ -387,6 +387,7 @@ section {
 #items {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     padding: 0 50px;
     margin-top: .5rem;
